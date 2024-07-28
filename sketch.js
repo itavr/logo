@@ -15,7 +15,7 @@ function setup() {
   textAlign(CENTER, CENTER);
 
   // הגדרת תאורה כללית
-  ambientLight(60);
+  ambientLight(200);
 }
 
 function draw() {
@@ -34,7 +34,7 @@ function draw() {
     
     push();
     translate(x, y, z);
-    fill(color(211, 209, 210)); // צבע הטקסט D3D1D2
+    fill(color(255, 255, 255)); // צבע הטקסט D3D1D2
     noStroke();
     draw3DText(char);
     pop();
@@ -43,7 +43,7 @@ function draw() {
 
 function draw3DText(char) {
   let points = font.textToPoints(char, 0, 0, fontSize, {
-    sampleFactor: 1.2,
+    sampleFactor: 1.5,
     simplifyThreshold: 0
   });
 
