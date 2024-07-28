@@ -19,10 +19,10 @@ function setup() {
 }
 
 function draw() {
-  clear(); // רקע שקוף
+  background(color(2, 3, 23)); // רקע בצבע 020317
 
   // הגדרת נקודת תאורה
-  pointLight(255, 255, 255, mouseX - width / 2, mouseY - height / 2, 250);
+  pointLight(color(210, 169, 113), mouseX - width / 2, mouseY - height / 2, 250);
 
   let time = millis() / 1000;
 
@@ -34,7 +34,7 @@ function draw() {
     
     push();
     translate(x, y, z);
-    fill(255);
+    fill(color(211, 209, 210)); // צבע הטקסט D3D1D2
     noStroke();
     draw3DText(char);
     pop();
